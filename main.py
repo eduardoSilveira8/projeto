@@ -491,3 +491,6 @@ def deletar_financa_tag(id_financa: int, id_tag: int, db=Depends(get_db)):
     return
 
 
+@app.get("/")
+def root():
+    return {"status": "ok", "message": "EconoApp API rodando 🚀"}
